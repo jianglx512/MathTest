@@ -1,5 +1,5 @@
 import React from 'react'
-import { QuestionModel } from './QuestionModel'
+import { QuestionModel } from '../Models/QuestionModel'
 
 const Question = (quest: QuestionModel) => {
     return (

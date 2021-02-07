@@ -1,5 +1,5 @@
 import QuestionSet from './Components/QuestionSet'
-import { QuestionSetModel } from './Components/QuestionSetModel'
+import { QuestionSetModel } from './Models/QuestionSetModel'
 import './App.css';
 
 function App() {

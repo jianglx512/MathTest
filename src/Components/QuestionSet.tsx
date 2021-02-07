@@ -1,6 +1,6 @@
 import Question from './Question'
-import { QuestionModel } from './QuestionModel'
-import { QuestionSetModel } from './QuestionSetModel'
+import { QuestionModel } from '../Models/QuestionModel'
+import { QuestionSetModel } from '../Models/QuestionSetModel'
 
 const QuestionSet = (questSet: QuestionSetModel) => {
     return (
