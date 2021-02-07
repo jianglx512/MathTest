@@ -3,8 +3,9 @@ import { QuestionModel } from '../Models/QuestionModel'
 
 const Question = (quest: QuestionModel) => {
     return (
-        <div>
-            <h1>here is the {quest.Id} question</h1>
+        <div className='questionDiv'>
+            <h1 className='questionText'>{quest.Text}</h1>
+            <input className='questionValue' type="text" />
         </div>
     )
 }
