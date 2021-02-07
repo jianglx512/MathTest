@@ -14,6 +14,12 @@
 .questionDiv {
   display: flex;
 }
+.questionDiv .iconDiv {
+  margin-right: 10px;
+  margin-left: auto;
+  align-self: center;
+}
+
 .questionText {
   display: inline;
 }
