@@ -1,9 +1,10 @@
 import React from 'react'
+import { QuestionModel } from './QuestionModel'
 
-const Question = (props: any) => {
+const Question = (quest: QuestionModel) => {
     return (
         <div>
-            <h1>here is the {props.num} question</h1>
+            <h1>here is the {quest.Id} question</h1>
         </div>
     )
 }

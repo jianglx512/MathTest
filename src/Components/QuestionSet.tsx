@@ -1,13 +1,17 @@
-import React from 'react'
 import Question from './Question'
+import { QuestionModel } from './QuestionModel'
+import { QuestionSetModel } from './QuestionSetModel'
 
-const QuestionSet = (props: any) => {
+const QuestionSet = (questSet: QuestionSetModel) => {
     return (
         <div>
-            <h1>Here is the question set: {props.title}</h1>
-            <Question num = {5}/>
-            <Question num = {2}/>
-            <Question num = {3}/>
+            <h1>Here is the question set: {questSet.Title}</h1>
+            <>
+                {questSet.QuestionList.map((quest) => (
+                    <Question {...quest}
+                    />
+                ))}
+            </>
         </div>
     )
 }
