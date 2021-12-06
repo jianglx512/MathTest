@@ -5,8 +5,6 @@ interface IQuestionSet {
   AllCorrect: boolean;
   HideEachMark: boolean;
   ShowSetCorrect: boolean;
-
-  onSubmit: () => void;
 }
 
 class QuestionSetModel implements IQuestionSet {
@@ -16,7 +14,5 @@ class QuestionSetModel implements IQuestionSet {
   public AllCorrect: boolean = false;
   public HideEachMark: boolean = false;
   public ShowSetCorrect: boolean = false;
-
-  public onSubmit(): void {}
 }
 export { QuestionSetModel };

@@ -15,6 +15,7 @@ function App() {
       Result: 3,
       IsCorrect: false,
       isEditable: true,
+      UserResult: "",
     },
     {
       Id: 2,
@@ -22,6 +23,7 @@ function App() {
       Result: 2,
       IsCorrect: false,
       isEditable: true,
+      UserResult: "",
     },
     {
       Id: 3,
@@ -29,6 +31,7 @@ function App() {
       Result: 12,
       IsCorrect: false,
       isEditable: true,
+      UserResult: "",
     },
     {
       Id: 4,
@@ -36,18 +39,15 @@ function App() {
       Result: 20,
       IsCorrect: false,
       isEditable: true,
+      UserResult: "",
     },
   ];
 
   const [questionSet, setQuestionSet] = useState(defQuestionSet);
 
-  function handleSubmitEvent(): void {
-    console.log('submit clicked')
-  }
-
   return (
     <div className="App">
-      <QuestionSet {...questionSet} onSubmit={() => handleSubmitEvent()} />
+      <QuestionSet key={1} questSet ={questionSet} />
     </div>
   );
 }
